@@ -116,3 +116,38 @@ function differenceBy(arr, values, iterate) {
         return [];
     }
 }
+
+/*
+Arguments
+    array (Array): The array to query.
+    [n=1] (number): The number of elements to drop.
+Returns
+    (Array): Returns the slice of array.
+*/
+
+function drop(arr, n) {
+    if (!n && n !== 0) {
+        n = 1;
+    }
+
+    return arr.slice(n);
+}
+
+/*
+Arguments
+    array (Array): The array to query.
+    [n=1] (number): The number of elements to drop.
+Returns
+    (Array): Returns the slice of array.
+*/
+
+function dropRight(arr, n) {
+    if (n === 0) {
+        return arr;
+    } else {
+        n = 1;
+    }
+
+    return arr.slice(0, -n);
+}
+
